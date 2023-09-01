@@ -31,7 +31,7 @@ const toggleNavbar = function () {
 addEventOnElements(navTogglers, "click", toggleNavbar);
 
 /** Show Or Hide Header **/
-/** 
+
 const header = document.querySelector("[data-header]");
 let lastScrollPos = 0;
 
@@ -54,7 +54,6 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
-**/
 
 /*** Hero Slider ***/
 const heroSlider = document.querySelector("[data-hero-slider]");
