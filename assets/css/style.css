@@ -324,6 +324,12 @@ body.nav__active {
   object-fit: cover;
 }
 
+/* .img__cover-2 {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+} */
+
 .section__subtitle {
   position: relative;
   color: var(--gold-crayola);
@@ -476,6 +482,10 @@ body.nav__active {
   position: absolute;
   max-width: max-content;
   z-index: -1;
+}
+
+.w_100 {
+  width: 100%;
 }
 
 /*-----------------------------------*\
@@ -967,6 +977,67 @@ body.nav__active {
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
+.about .container {
+  display: grid;
+  gap: 120px;
+}
+
+.about .section__text {
+  margin-block: 15px 30px;
+}
+
+.about .btn {
+  margin-inline: auto;
+  margin-block-start: 26px;
+}
+
+.about__banner {
+  position: relative;
+  margin-block-end: 120px;
+}
+
+.about__banner > .w_100 {
+  padding-inline-start: 50px;
+}
+
+.about .abs__img {
+  position: absolute;
+}
+
+.about .abs__img::before {
+  z-index: -1;
+}
+
+.about .abs__img-1 {
+  bottom: -120px;
+  left: 0;
+  width: 150px;
+  padding-block: 50px;
+}
+
+.about .abs__img-2 {
+  top: -65px;
+  right: 0;
+  overflow: hidden;
+}
+
+.about .abs__img-1::before {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 140px;
+  transform: translateX(-50%);
+  background-image: url("../images/img-pattern.svg");
+  background-repeat: repeat;
+}
+
+.about .abs__img-2::before {
+  inset: 0;
+  background-image: url("../images/badge-2-bg.png");
+  background-repeat: repeat;
+  background-size: contain;
+  animation: rotate360 15s linear infinite;
+}
 
 /*-----------------------------------*\
   #SPECIAL DISH
