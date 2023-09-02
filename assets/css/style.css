@@ -503,6 +503,7 @@ body.nav__active {
   place-content: center;
   justify-items: center;
   overflow: hidden;
+  /* display: none; To Be Enabled */
   z-index: 10;
   transition: var(--transition-2);
 }
@@ -1042,6 +1043,39 @@ body.nav__active {
 /*-----------------------------------*\
   #SPECIAL DISH
 \*-----------------------------------*/
+.special__dish-content {
+  padding-block: 70px;
+}
+
+.special__dish .abs__img {
+  margin-inline: auto;
+  margin-block-end: 12px;
+}
+
+.special__dish .section__text {
+  margin-block: 16px 40px;
+}
+
+.special__dish-content .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-block-end: 40px;
+}
+
+.special__dish-content .del {
+  text-decoration: none;
+  color: var(--davys-grey);
+}
+
+.special__dish-content .span {
+  color: var(--gold-crayola);
+}
+
+.special__dish .btn {
+  margin-inline: auto;
+}
 
 /*-----------------------------------*\
   #MENU
