@@ -488,6 +488,22 @@ body.nav__active {
   width: 100%;
 }
 
+.move__anim {
+  animation: move 5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /*-----------------------------------*\
   #PRELOAD
 \*-----------------------------------*/
@@ -1065,7 +1081,7 @@ body.nav__active {
 }
 
 .special__dish-content .del {
-  text-decoration: none;
+  /* text-decoration: none; Remove Strike Through*/
   color: var(--davys-grey);
 }
 
@@ -1080,6 +1096,91 @@ body.nav__active {
 /*-----------------------------------*\
   #MENU
 \*-----------------------------------*/
+.menu .section__title {
+  margin-block-end: 40px;
+}
+
+.menu .grid__list {
+  margin-block-end: 50px;
+}
+
+.menu__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.hover\:card .card__banner {
+  background-color: var(--gold-crayola);
+}
+
+.hover\:card .card__banner .img__cover {
+  transition: var(--transition-2);
+}
+
+.hover\:card:is(:hover, :focus-visible) .card__banner .img__cover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
+.menu .card__banner {
+  flex-shrink: 0;
+  border-radius: var(--radius-24);
+}
+
+.menu__card .card__title {
+  transition: var(--transition-2);
+}
+
+.menu__card .card__title:is(:hover, :focus-visible) {
+  color: var(--gold-crayola);
+}
+
+.menu__card .badge {
+  background-color: var(--gold-crayola);
+  color: var(--eerie-black-1);
+  font-family: var(--fontFamily-forum);
+  max-width: max-content;
+  line-height: var(--lineHeight-6);
+  text-transform: uppercase;
+  padding-inline: 10px;
+  margin-block-start: 10px;
+}
+
+.menu__card .span {
+  color: var(--gold-crayola);
+  margin-block: 10px;
+}
+
+.menu__card .card__text {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-4);
+}
+
+.menu__text .span {
+  display: inline-block;
+  color: var(--gold-crayola);
+}
+
+.menu .btn {
+  margin-inline: auto;
+  margin-block-start: 26px;
+}
+
+.menu .shape {
+  display: block;
+  width: 70%;
+}
+
+.menu .shape__2 {
+  top: 0;
+  left: 0;
+}
+
+.menu .shape__3 {
+  bottom: 0;
+  right: 0;
+}
 
 /*-----------------------------------*\
   #TESTIMONIALS
