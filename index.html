@@ -117,10 +117,10 @@
             </li>
 
             <li class="navbar__item">
-              <a href="#menu" class="navbar__link hover__underline">
+              <a href="#services" class="navbar__link hover__underline">
                 <div class="separator"></div>
 
-                <div class="span">Menus</div>
+                <div class="span">Our Services</div>
               </a>
             </li>
 
@@ -129,6 +129,14 @@
                 <div class="separator"></div>
 
                 <div class="span">About Us</div>
+              </a>
+            </li>
+
+            <li class="navbar__item">
+              <a href="#menu" class="navbar__link hover__underline">
+                <div class="separator"></div>
+
+                <div class="span">Our Menu</div>
               </a>
             </li>
 
@@ -144,7 +152,7 @@
               <a href="#contact" class="navbar__link hover__underline">
                 <div class="separator"></div>
 
-                <div class="span">Contact</div>
+                <div class="span">Contact Us</div>
               </a>
             </li>
           </ul>
@@ -197,7 +205,7 @@
       <article>
         <!-- Hero Section-->
         <section class="hero text__center" aria-label="home">
-          <ul class="hero__slider" data-hero-slider>
+          <ul class="hero__slider" id="home" data-hero-slider>
             <li class="slider__item active" data-hero-slider-item>
               <div class="slider__bg">
                 <img
@@ -327,6 +335,7 @@
         <section
           class="section service bg__color-10 text__center"
           arial-label="service"
+          id="services"
         >
           <p class="section__subtitle label__2">Flavors For Royalty</p>
 
@@ -344,15 +353,12 @@
                 <a href="#" class="has__before hover:shine">
                   <figure
                     class="card__banner img__holder"
-                    style="--width: 285; --height: 336"
+                    style="--width: 285; --height: 300"
                   >
                     <img
                       src="./assets/images/service-1.jpg"
-                      width="285"
-                      height="336"
                       loading="lazy"
                       alt="breakfast-img"
-                      class="img__cover"
                     />
                   </figure>
                 </a>
@@ -374,15 +380,12 @@
                 <a href="#" class="has__before hover:shine">
                   <figure
                     class="card__banner img__holder"
-                    style="--width: 285; --height: 336"
+                    style="--width: 285; --height: 300"
                   >
                     <img
                       src="./assets/images/service-2.jpg"
-                      width="285"
-                      height="336"
                       loading="lazy"
                       alt="appetizers-img"
-                      class="img__cover"
                     />
                   </figure>
                 </a>
@@ -404,15 +407,12 @@
                 <a href="#" class="has__before hover:shine">
                   <figure
                     class="card__banner img__holder"
-                    style="--width: 285; --height: 336"
+                    style="--width: 285; --height: 300"
                   >
                     <img
                       src="./assets/images/service-3.jpg"
-                      width="285"
-                      height="336"
                       loading="lazy"
                       alt="drinks-img"
-                      class="img__cover"
                     />
                   </figure>
                 </a>
@@ -452,8 +452,8 @@
         <!-- About Section -->
         <section
           class="section about text__center"
-          aria-labelledby="about-label"
           id="about"
+          aria-labelledby="about-label"
         >
           <div class="container">
             <div class="about__content">
@@ -539,6 +539,7 @@
         <!-- Special Dish Section -->
         <section
           class="section special__dish text__center"
+          id="special"
           aria-labelledby="dish-label"
         >
           <div class="special__dish-banner">
@@ -608,7 +609,7 @@
         </section>
 
         <!-- Menu Section -->
-        <section class="section menu" aria-label="menu-label" id="menu">
+        <section class="section menu" id="menu" aria-label="menu-label">
           <div class="container">
             <p class="section__subtitle text__center label__2">
               Special Selection
@@ -858,6 +859,40 @@
               alt="shape-image"
               class="shape shape__3 move__anim"
             />
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section
+          class="section testimonials text__center has__bg__image"
+          style="background-image: url('./assets/images/testimonial-bg.jpg')"
+        >
+          <div class="container">
+            <div class="quote">”</div>
+
+            <p class="headline__2 testimonial__text">
+              I wanted to thank you for inviting me down for that amazing dinner
+              the other night. The food was extraordinary.
+            </p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+
+            <div class="profile">
+              <img
+                src="./assets/images/testi-avatar.jpg"
+                width="100"
+                height="100"
+                loading="lazy"
+                alt="avatar-img"
+                class="img"
+              />
+
+              <p class="label__2 profile__name">Ian Mucheru</p>
+            </div>
           </div>
         </section>
       </article>

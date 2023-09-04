@@ -504,6 +504,12 @@ body.nav__active {
   }
 }
 
+.has__bg__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*-----------------------------------*\
   #PRELOAD
 \*-----------------------------------*/
@@ -952,6 +958,12 @@ body.nav__active {
   overflow: hidden;
 }
 
+.service__card img {
+  margin-inline: auto;
+  width: 300px;
+  height: 100%;
+}
+
 .service__card .has__before {
   padding-block: 30px;
   margin-block-end: 26px;
@@ -979,11 +991,11 @@ body.nav__active {
   transition-delay: 300ms;
 }
 
-.service__card .card__banner {
+.service__card .card__banner img {
   transition: var(--transition-2);
 }
 
-.service__card:is(:hover, :focus-visible) .card__banner {
+.service__card:is(:hover, :focus-visible) .card__banner img {
   transform: scale(1.05);
 }
 
@@ -1185,6 +1197,41 @@ body.nav__active {
 /*-----------------------------------*\
   #TESTIMONIALS
 \*-----------------------------------*/
+.testimonials {
+  padding-block-end: 340px;
+  position: static;
+}
+
+.testimonials .quote {
+  font-size: 7rem;
+  font-family: var(--fontFamily-forum);
+  line-height: 0.7rem;
+}
+
+.testimonials .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-block: 40px 50px;
+}
+
+.testimonials .separator {
+  margin-inline: 0 10px;
+  animation: rotate360 15s linear infinite;
+}
+
+.profile img {
+  margin-inline: auto;
+  border-radius: var(--radius-circle);
+  margin-block-end: 15px;
+}
+
+.testimonials .profile__name {
+  color: var(--gold-crayola);
+  font-weight: var(--weight-bold);
+  text-decoration: uppercase;
+  letter-spacing: var(--letterSpacing-3);
+}
 
 /*-----------------------------------*\
   #RESERVATION
