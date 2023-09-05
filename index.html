@@ -895,6 +895,151 @@
             </div>
           </div>
         </section>
+
+        <!-- Reservation Section-->
+        <section class="reservation">
+          <div class="container">
+            <div class="form reservation__form bg__black__10">
+              <form action="" class="form__left">
+                <h2 class="headline__1 text__center form__text">
+                  Online Reservation
+                </h2>
+
+                <div class="input__wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    autocomplete="off"
+                    placeholder="Name"
+                    class="input__field"
+                  />
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    autocomplete="off"
+                    placeholder="Phone"
+                    class="input__field"
+                  />
+                </div>
+
+                <div class="input__wrapper">
+                  <div class="icon__wrapper">
+                    <ion-icon
+                      name="person-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <select name="person" class="input__field">
+                      <option value="1-person">1 Person</option>
+                      <option value="2-person">2 Persons</option>
+                      <option value="3-person">3 Persons</option>
+                      <option value="4-person">4 Persons</option>
+                      <option value="5-person">5 Persons</option>
+                      <option value="6-person">6 Persons</option>
+                      <option value="7-person">7 Persons</option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon__wrapper">
+                    <ion-icon
+                      name="calendar-clear-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <input
+                      type="date"
+                      name="reservation__date"
+                      class="input__field"
+                    />
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon__wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <select name="person" class="input__field">
+                      <option value="08:00am">08 : 00 am</option>
+                      <option value="09:00am">09 : 00 am</option>
+                      <option value="10:00am">10 : 00 am</option>
+                      <option value="11:00am">11 : 00 am</option>
+                      <option value="12:00am">12 : 00 am</option>
+                      <option value="1:00pm">1 : 00 pm</option>
+                      <option value="2:00pm">2 : 00 pm</option>
+                      <option value="3:00pm">3 : 00 pm</option>
+                      <option value="4:00pm">4 : 00 pm</option>
+                      <option value="5:00pm">5 : 00 pm</option>
+                      <option value="6:00pm">6 : 00 pm</option>
+                      <option value="7:00pm">7 : 00 pm</option>
+                      <option value="8:00pm">8 : 00 pm</option>
+                      <option value="9:00pm">9 : 00 pm</option>
+                      <option value="10:00pm">10 : 00 pm</option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+                </div>
+
+                <textarea
+                  name="message"
+                  placeholder="Message"
+                  autocomplete="off"
+                  class="input__field"
+                ></textarea>
+
+                <button type="submit" class="btn btn__secondary">
+                  <span class="text text__1">Book A Table</span>
+                  <span class="text text__2" aria-hidden="true"
+                    >Book A Table</span
+                  >
+                </button>
+              </form>
+
+              <div
+                class="form__right text__center"
+                style="
+                  background-image: url('./assets/images/form-pattern.png');
+                "
+              >
+                <h2 class="headline__2 text__center">Contact Us</h2>
+
+                <p class="contact__label">Booking Request</p>
+
+                <a
+                  href="tel:+254725725075"
+                  class="body__1 contact__number hover__underline"
+                  >+254-725-725-075</a
+                >
+
+                <div class="separator"></div>
+
+                <p class="contact__label">Location</p>
+
+                <address class="body__4">
+                  Grilli Restaurant, Koinange St, <br />
+                  Nairobi Kenya
+                </address>
+
+                <p class="contact__label">Lunch Time</p>
+
+                <p class="body__4">
+                  Monday to Sunday <br />
+                  11.00 am - 2.30pm
+                </p>
+
+                <p class="contact__label">Dinner Time</p>
+
+                <p class="body__4">
+                  Monday to Sunday <br />
+                  05.00 pm - 10.00pm
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </article>
     </main>
 
