@@ -1353,6 +1353,41 @@ textarea.input__field {
 /*-----------------------------------*\
   #FEATURES
 \*-----------------------------------*/
+.features .section__title {
+  margin-block-end: 40px;
+}
+
+.feature__item:nth-child(2n + 1) .feature__card {
+  background-color: var(--eerie-black-3);
+}
+
+.feature__item:nth-child(2n) .feature__card {
+  background-color: var(--smoky-black-3);
+}
+
+.feature__card {
+  padding: 30px 20px 40px;
+}
+
+.feature__card .card__icon {
+  max-width: max-content;
+  margin-inline: auto;
+
+  transition: var(--transition-2);
+}
+
+.feature__card:hover .card__icon {
+  transform: scale(-1) rotate(360deg);
+}
+
+.feature__card .card__title {
+  margin-block: 20px;
+}
+
+.feature__card .card__text {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-6);
+}
 
 /*-----------------------------------*\
   #EVENT
