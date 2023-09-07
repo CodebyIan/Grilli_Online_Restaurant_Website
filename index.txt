@@ -285,7 +285,7 @@ Event & Party
 
 Recent Updates
 
-Upcoming Event
+Upcoming Events
 
 alt = Flavour so good you’ll try to eat with your eyes.
 
@@ -313,7 +313,7 @@ booking@grilli.com
 
 Booking Request : +88-123-123456
 
-Open : 09:00 am - 01:00 pm
+Open : 09:00 am - 10:00 pm
 
 Get News & Offers
 
@@ -326,7 +326,7 @@ placeholder = Your email
 Subscribe
 
 Home
-Menus
+Menu
 About Us
 Our Chefs
 Contact

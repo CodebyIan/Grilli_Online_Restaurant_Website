@@ -1445,6 +1445,120 @@ textarea.input__field {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+.footer__top {
+  margin-block-end: 40px;
+}
+
+.footer__brand {
+  position: relative;
+  padding: 50px 40px;
+  background: var(--smoky-black-1) url("../images/footer-form-bg.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.footer__brand::before,
+.footer__brand::after {
+  top: 0;
+  width: 15px;
+  height: 100%;
+  background-image: url("../images/footer-form-pattern.svg");
+}
+
+.footer__brand::before {
+  left: 0;
+}
+
+.footer__brand::after {
+  right: 0;
+}
+
+.footer__brand .logo {
+  max-width: max-content;
+  margin-inline: auto;
+  margin-block-end: 40px;
+}
+
+.footer__brand :is(.body__4, .label__1) {
+  color: var(--quick-silver);
+  line-height: var(--lineHeight-3);
+}
+
+.footer__brand .contact__link {
+  margin-block: 6px;
+  transition: var(--transition-1);
+}
+
+.footer__brand .contact__link:is(:hover, :focus-visible) {
+  color: var(--gold-crayola);
+}
+
+.footer__brand .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-block: 40px 25px;
+}
+
+.footer__brand .label__1 {
+  margin-block-end: 30px;
+}
+
+.footer__brand .label__1 span {
+  display: inline;
+  color: var(--white);
+}
+
+.footer__brand .icon__wrapper .input__field {
+  cursor: text;
+}
+
+.footer__brand .btn {
+  margin-inline: auto;
+  min-width: 100%;
+}
+
+.footer__list {
+  display: grid;
+  gap: 20px;
+}
+
+.footer__top .wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-block: 10px 25px;
+}
+
+.footer__link {
+  color: var(--quick-silver);
+  font-weight: var(--weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letterSpacing-4);
+  margin-inline: auto;
+  transition: var(--transition-1);
+}
+
+.footer__link:is(:hover, :focus-visible) {
+  color: var(--gold-crayola);
+}
+
+.footer__bottom a {
+  display: inline;
+}
+
+.footer__bottom a span {
+  text-decoration: underline;
+}
+
+.footer__bottom .color {
+  display: inline;
+  color: var(--gold-crayola);
+}
+
+.footer__bottom .color:hover {
+  color: var(--quick-silver);
+}
 
 /*-----------------------------------*\
   #BACK TO TOP
