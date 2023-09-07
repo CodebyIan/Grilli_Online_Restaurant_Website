@@ -1392,6 +1392,55 @@ textarea.input__field {
 /*-----------------------------------*\
   #EVENT
 \*-----------------------------------*/
+.event .section__title {
+  margin-block-end: 40px;
+}
+
+.event__card {
+  position: relative;
+  overflow: hidden;
+}
+
+.event__card .card__banner .img__cover {
+  transition: var(--transition-2);
+}
+
+.event__card:is(:hover, :focus-within) .img__cover {
+  transform: scale(1.05);
+}
+
+.event__card .publish__date {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+  padding: 5px 10px;
+  color: var(--gold-crayola);
+  background-color: var(--black);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--letterSpacing-1);
+  line-height: 14px;
+}
+
+.event__card .card__content {
+  background-image: var(--gradient-1);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 35px 35px 25px;
+}
+
+.event__card .card__subtitle {
+  color: var(--gold-crayola);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--letterSpacing-2);
+  margin-block-end: 5px;
+}
+
+.event .btn {
+  margin-inline: auto;
+  margin-block-start: 40px;
+}
 
 /*-----------------------------------*\
   #FOOTER
