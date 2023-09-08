@@ -31,7 +31,7 @@
     <link rel="preload" as="image" href="assets/images/hero-slider-2.jpg" />
     <link rel="preload" as="image" href="assets/images/hero-slider-3.jpg" />
   </head>
-  <body>
+  <body id="top">
     <!-- Preloader -->
     <div class="preload" data-preload>
       <div class="circle"></div>
@@ -61,7 +61,7 @@
           <span class="span"> Open : 8.00 am to 10.00 pm </span>
         </div>
 
-        <a href="tel:+254725725075" class="topbar__item">
+        <a href="tel:+254725725075" class="topbar__item link">
           <div class="icon">
             <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
           </div>
@@ -71,7 +71,7 @@
 
         <div class="separator"></div>
 
-        <a href="mailto:imucheru.im@gmail.com" class="topbar__item">
+        <a href="mailto:imucheru.im@gmail.com" class="topbar__item link">
           <div class="icon">
             <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
           </div>
@@ -337,116 +337,127 @@
           arial-label="service"
           id="services"
         >
-          <p class="section__subtitle label__2">Flavors For Royalty</p>
+          <div class="container">
+            <p class="section__subtitle label__2">Flavors For Royalty</p>
 
-          <h2 class="headline__1 section__title">We Offer Top Notch</h2>
+            <h2 class="headline__1 section__title">We Offer Top Notch</h2>
 
-          <p class="section__text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry lorem Ipsum has been the industrys standard dummy text
-            ever.
-          </p>
+            <p class="section__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry lorem Ipsum has been the industrys standard dummy text
+              ever.
+            </p>
 
-          <ul class="grid__list">
-            <li>
-              <div class="service__card">
-                <a href="#" class="has__before hover:shine">
-                  <figure
-                    class="card__banner img__holder"
-                    style="--width: 285; --height: 300"
-                  >
-                    <img
-                      src="./assets/images/service-1.jpg"
-                      loading="lazy"
-                      alt="breakfast-img"
-                    />
-                  </figure>
-                </a>
+            <ul class="grid__list">
+              <li>
+                <div class="service__card">
+                  <a href="#" class="has__before hover:shine">
+                    <figure
+                      class="card__banner img__holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/service-1.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="breakfast-img"
+                        class="img__cover"
+                      />
+                    </figure>
+                  </a>
 
-                <div class="card__content">
-                  <h3 class="title__4 card__title">
-                    <a href="#">Breakfast</a>
-                  </h3>
+                  <div class="card__content">
+                    <h3 class="title__4 card__title">
+                      <a href="#">Breakfast</a>
+                    </h3>
 
-                  <a href="#" class="btn__text hover__underline label__2"
-                    >View Menu</a
-                  >
+                    <a href="#" class="btn__text hover__underline label__2"
+                      >View Menu</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li>
-              <div class="service__card">
-                <a href="#" class="has__before hover:shine">
-                  <figure
-                    class="card__banner img__holder"
-                    style="--width: 285; --height: 300"
-                  >
-                    <img
-                      src="./assets/images/service-2.jpg"
-                      loading="lazy"
-                      alt="appetizers-img"
-                    />
-                  </figure>
-                </a>
+              <li>
+                <div class="service__card">
+                  <a href="#" class="has__before hover:shine">
+                    <figure
+                      class="card__banner img__holder"
+                      style="--width: 285; --height: 300"
+                    >
+                      <img
+                        src="./assets/images/service-2.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="appetizers-img"
+                        class="img__cover"
+                      />
+                    </figure>
+                  </a>
 
-                <div class="card__content">
-                  <h3 class="title__4 card__title">
-                    <a href="#">Appetizers</a>
-                  </h3>
+                  <div class="card__content">
+                    <h3 class="title__4 card__title">
+                      <a href="#">Appetizers</a>
+                    </h3>
 
-                  <a href="#" class="btn__text hover__underline label__2"
-                    >View Menu</a
-                  >
+                    <a href="#" class="btn__text hover__underline label__2"
+                      >View Menu</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li>
-              <div class="service__card">
-                <a href="#" class="has__before hover:shine">
-                  <figure
-                    class="card__banner img__holder"
-                    style="--width: 285; --height: 300"
-                  >
-                    <img
-                      src="./assets/images/service-3.jpg"
-                      loading="lazy"
-                      alt="drinks-img"
-                    />
-                  </figure>
-                </a>
+              <li>
+                <div class="service__card">
+                  <a href="#" class="has__before hover:shine">
+                    <figure
+                      class="card__banner img__holder"
+                      style="--width: 285; --height: 300"
+                    >
+                      <img
+                        src="./assets/images/service-3.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="drinks-img"
+                        class="img__cover"
+                      />
+                    </figure>
+                  </a>
 
-                <div class="card__content">
-                  <h3 class="title__4 card__title">
-                    <a href="#">Drinks</a>
-                  </h3>
+                  <div class="card__content">
+                    <h3 class="title__4 card__title">
+                      <a href="#">Drinks</a>
+                    </h3>
 
-                  <a href="#" class="btn__text hover__underline label__2"
-                    >View Menu</a
-                  >
+                    <a href="#" class="btn__text hover__underline label__2"
+                      >View Menu</a
+                    >
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
+              </li>
+            </ul>
 
-          <img
-            src="assets/images/shape-1.png"
-            width="246"
-            height="412"
-            loading="lazy"
-            alt="shape-img"
-            class="shape shape__1 move__anim"
-          />
+            <img
+              src="assets/images/shape-1.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape-img"
+              class="shape shape__1 move__anim"
+            />
 
-          <img
-            src="assets/images/shape-2.png"
-            width="246"
-            height="412"
-            loading="lazy"
-            alt="shape-img"
-            class="shape shape__1 move__anim"
-          />
+            <img
+              src="assets/images/shape-2.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape-img"
+              class="shape shape__1 move__anim"
+            />
+          </div>
         </section>
 
         <!-- About Section -->
@@ -831,7 +842,7 @@
             </ul>
 
             <p class="menu__text text__center">
-              We Are Open Daily From <span class="span">7:00 pm</span> to
+              We Open Daily From <span class="span">7:00 am</span> to
               <span class="span">9:00 pm</span>
             </p>
 
@@ -1431,6 +1442,16 @@
         </div>
       </div>
     </footer>
+
+    <!-- Back To Top -->
+    <a
+      href="#top"
+      class="back__top-btn active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
 
     <!-- ionicon Link -->
     <script
